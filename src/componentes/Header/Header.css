@@ -1,0 +1,54 @@
+.header {
+  background: var(--brand);
+  color: #f6efe0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  padding: 0 1.5rem;
+  border-bottom: 3px solid var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.header nav ul,
+.header > div ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  height: 100%;
+}
+
+.header a,
+.header button {
+  text-decoration: none;
+  color: #f6efe0;
+  font-size: 1rem;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.header-brand svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.header a:not(.header-brand):hover,
+.header button:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.header button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
