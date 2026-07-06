@@ -1,0 +1,9 @@
+.footer {
+  text-align: center;
+  padding: 1.75rem 1rem;
+  margin-top: 2rem;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+  font-family: var(--serif);
+  font-style: italic;
+}
