@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" role="img" aria-label="Livro sem capa">
+  <rect width="300" height="450" fill="#efe1c6"/>
+  <rect x="16" y="16" width="268" height="418" rx="8" fill="#e8d7b6" stroke="#c9b184" stroke-width="2"/>
+  <g transform="translate(150 190)" fill="none" stroke="#a07d47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-58 -34 L-4 -22 L-4 44 L-58 32 Z" fill="#f4ead3"/>
+    <path d="M58 -34 L4 -22 L4 44 L58 32 Z" fill="#f4ead3"/>
+    <path d="M-4 -22 L4 -22"/>
+    <path d="M-46 -18 L-14 -11 M-46 -2 L-14 5 M-46 14 L-14 21" stroke-width="4"/>
+    <path d="M14 -11 L46 -18 M14 5 L46 -2 M14 21 L46 14" stroke-width="4"/>
+  </g>
+  <text x="150" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#8a7350">Sem capa</text>
+</svg>
