@@ -1,0 +1,69 @@
+.home {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(150deg, rgba(63, 93, 71, 0.94) 0%, rgba(52, 75, 57, 0.94) 100%),
+    url("/livraria.svg");
+  background-size: cover, 15rem;
+  background-position: center, right -1.5rem bottom -2rem;
+  background-repeat: no-repeat, no-repeat;
+  color: #f6efe0;
+  padding: 2.25rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.heroText h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.heroText p {
+  color: #e4dcc8;
+  font-size: 1.05rem;
+  max-width: 34rem;
+}
+
+.btnAdd {
+  flex-shrink: 0;
+  background: var(--accent);
+  color: #fffdf8;
+  text-decoration: none;
+  padding: 0.8rem 1.15rem;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+  transition: background 0.15s ease;
+}
+
+.btnAdd:hover {
+  background: var(--accent-strong);
+}
+
+.vazio {
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  padding: 3rem 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 40rem) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    background-size: cover, 0;
+  }
+}
