@@ -1,0 +1,137 @@
+.livro-form {
+  max-width: 44rem;
+  margin: 2.5rem auto;
+  background: var(--surface);
+  padding: 2.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.livro-form h1 {
+  text-align: center;
+  color: var(--ink);
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Busca Open Library */
+.busca-ol {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.busca-linha {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.busca-linha input {
+  flex: 1;
+}
+
+.busca-linha button {
+  min-width: 7.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fffdf8;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.busca-linha button:hover {
+  background: var(--accent-strong);
+}
+
+.busca-linha button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.sugestoes-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.75rem;
+}
+
+.sugestao-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sugestao-capa {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  background: var(--surface-2);
+}
+
+.sugestao-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.5rem 0.6rem;
+  flex: 1;
+}
+
+.sugestao-titulo {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.sugestao-autor {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.sugestao-usar {
+  margin: 0 0.6rem 0.6rem;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--brand);
+  color: #f6efe0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sugestao-usar:hover {
+  background: var(--brand-strong);
+}
+
+/* Botao salvar */
+.livro-form button[type="submit"] {
+  align-self: center;
+  min-width: 12rem;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--brand);
+  color: #f6efe0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.livro-form button[type="submit"]:hover {
+  background: var(--brand-strong);
+}
