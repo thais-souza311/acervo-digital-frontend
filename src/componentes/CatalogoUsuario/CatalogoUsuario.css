@@ -1,0 +1,61 @@
+.abas {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--line);
+}
+
+.aba {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  padding: 0.75rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.aba:hover {
+  color: var(--ink);
+}
+
+.aba-ativa {
+  color: var(--brand-strong);
+  border-bottom-color: var(--brand);
+}
+
+.aba-contador {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--surface-2);
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.05rem 0.5rem;
+}
+
+.aba-ativa .aba-contador {
+  background: var(--brand);
+  color: #f6efe0;
+  border-color: var(--brand);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr));
+  gap: 1.25rem;
+}
+
+.catalogo-vazio {
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--ink-soft);
+}
