@@ -29,7 +29,8 @@ export async function create(dados: LoginDTO): Promise<void> {
   });
 
   if (!response.ok) {
-    throw new Error("Erro ao criar usuário");
+    const erro = await response.json().catch(() => null);
+    throw new Error(erro?.message ?? "Erro ao criar usuário");
   }
 }
 

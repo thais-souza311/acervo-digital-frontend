@@ -33,8 +33,8 @@ export default function CreateForm() {
       await create({ email, senha });
       toast.success("Usuário criado com sucesso");
       router.push("/login");
-    } catch {
-      toast.error("Erro ao criar usuário");
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : "Erro ao criar usuário");
     }
   }
 
