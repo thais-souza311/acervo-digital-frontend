@@ -38,7 +38,7 @@ export default function LoginForm() {
       <aside className="auth-hero">
         <img src="/livraria.svg" alt="Estante de livros do acervo" />
         <h2>Bem-vindo ao Acervo Digital</h2>
-        <p>Garimpe livros usados &mdash; cada exemplar com a sua própria história.</p>
+        <p> Não perca a oportunidade de enriquecer sua leitura &mdash; adquira um livro agora mesmo!</p>
       </aside>
 
       <form onSubmit={handleSubmit} className="login-form">

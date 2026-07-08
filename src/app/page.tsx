@@ -34,7 +34,7 @@ export default async function Home() {
           <p>
             {isAdmin
               ? "Gerencie o acervo: cadastre, edite e controle a disponibilidade dos livros."
-              : "Garimpe livros usados. Cada exemplar é único — quando alguém leva, ele sai da prateleira."}
+              : "Cada exemplar é único — quando alguém leva, ele sai da prateleira."}
           </p>
         </div>
 
