@@ -15,7 +15,7 @@ export default async function CriarLivroPage() {
   const user = await getMe(cookieHeader);
 
   if (user.perfil !== "ADMIN") {
-    redirect("/");
+    redirect("/home");
   }
 
   return <LivroForm />;

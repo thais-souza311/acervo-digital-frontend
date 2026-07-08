@@ -75,7 +75,7 @@ export default function LivroForm({ livro }: Props) {
       }
 
       toast.success("Livro salvo");
-      router.push("/");
+      router.push("/home");
       router.refresh();
     } catch {
       toast.error("Erro ao salvar livro");

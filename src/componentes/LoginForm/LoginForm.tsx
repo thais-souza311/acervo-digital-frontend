@@ -26,7 +26,7 @@ export default function LoginForm() {
     try {
       await login({ email, senha });
       toast.success("Login realizado");
-      router.push("/");
+      router.push("/home");
       router.refresh();
     } catch {
       toast.error("Usuário ou senha inválidos");

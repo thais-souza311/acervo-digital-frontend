@@ -37,7 +37,11 @@ export interface OpenLibraryLivro {
 
 export interface Compra {
   id: number;
+  livroId: number | null;
   precoPago: number;
-  livro: Livro;
+  titulo: string;
+  autor: string;
+  imagem: string;
+  estado: "NOVO" | "BOM" | "USADO" | "DANIFICADO";
 }
 

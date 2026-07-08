@@ -24,7 +24,7 @@ export default async function EditarLivroPage({ params }: Props) {
   const user = await getMe(cookieHeader);
 
   if (user.perfil !== "ADMIN") {
-    redirect("/");
+    redirect("/home");
   }
 
   const livro = await getLivro(id, cookieHeader);
