@@ -20,7 +20,7 @@ export default function LivroForm({ livro }: Props) {
   const [autor, setAutor] = useState(livro?.autor ?? "");
   const [descricao, setDescricao] = useState(livro?.descricao ?? "");
   const [imagem, setImagem] = useState(livro?.imagem ?? "");
-  const [preco, setPreco] = useState(livro?.preco ?? 0);
+  const [preco, setPreco] = useState(String(livro?.preco ?? ""));
   const [estado, setEstado] = useState(livro?.estado ?? "BOM");
   const [busca, setBusca] = useState("");
   const [sugestoes, setSugestoes] = useState<OpenLibraryLivro[]>([]);
@@ -63,7 +63,7 @@ export default function LivroForm({ livro }: Props) {
       autor,
       descricao,
       imagem,
-      preco,
+      preco: Number(preco),
       estado,
     };
 
@@ -188,7 +188,7 @@ export default function LivroForm({ livro }: Props) {
           step="0.01"
           min="0"
           value={preco}
-          onChange={(e) => setPreco(Number(e.target.value))}
+          onChange={(e) => setPreco(e.target.value)}
           placeholder="0,00"
         />
       </div>
